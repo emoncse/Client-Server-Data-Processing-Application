@@ -11,7 +11,12 @@
 void send_data_to_server();
 
 int main() {
-    freopen("logs/client.log","w", stdout);
+    FILE *log_file = freopen("logs/client.log", "w", stdout);
+    if (!log_file) {
+        perror("Failed to open log file");
+        exit(EXIT_FAILURE);
+    }
+
     send_data_to_server();
     return 0;
 }
@@ -29,7 +34,12 @@ void send_data_to_server() {
 
     server_addr.sin_family = AF_INET;
     server_addr.sin_port = htons(SERVER_PORT);
-    server_addr.sin_addr.s_addr = inet_addr(SERVER_IP);
+
+    if (inet_pton(AF_INET, SERVER_IP, &server_addr.sin_addr) <= 0) {
+        perror("Invalid server address");
+        close(sock);
+        exit(EXIT_FAILURE);
+    }
 
     if (connect(sock, (struct sockaddr*)&server_addr, sizeof(server_addr)) < 0) {
         perror("Connection to server failed");
@@ -47,13 +57,26 @@ void send_data_to_server() {
     }
 
     while (fgets(buffer, sizeof(buffer), file)) {
-        buffer[strcspn(buffer, "\r\n")] = 0;
+        buffer[strcspn(buffer, "\r\n")] = '\0';
 
-        send(sock, buffer, strlen(buffer), 0);
+        ssize_t bytes_sent = send(sock, buffer, strlen(buffer), 0);
+        if (bytes_sent < 0) {
+            perror("Failed to send data");
+            fclose(file);
+            close(sock);
+            exit(EXIT_FAILURE);
+        }
         printf("Sent: %s\n", buffer);
 
         memset(buffer, 0, BUFFER_SIZE);
-        recv(sock, buffer, BUFFER_SIZE, 0);
+        ssize_t bytes_received = recv(sock, buffer, BUFFER_SIZE, 0);
+        if (bytes_received < 0) {
+            perror("Failed to receive data");
+            break;
+        } else if (bytes_received == 0) {
+            printf("Server closed connection\n");
+            break;
+        }
         printf("Server Response: %s\n", buffer);
     }
 

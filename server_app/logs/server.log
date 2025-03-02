@@ -63,3 +63,218 @@ Parsed Data - ID: 8, First: Emu, Last: Mon, Email: emon@gmail.com, City: Dhaka
 Connected to MySQL successfully
 Stored successfully - ID: 8, Name: Emu Mon, Email: emon@gmail.com, City: Dhaka
 Client disconnected
+Server listening on port 8080...
+New client connected
+Received data: 1,John,Doe,john.doe@gmail.com,Dhaka
+Parsed Data - ID: 1, First: John, Last: Doe, Email: john.doe@gmail.com, City: Dhaka
+Connected to MySQL successfully
+Stored successfully - ID: 1, Name: John Doe, Email: john.doe@gmail.com, City: Dhaka
+Received data: 2,Jane,Doe,jane.doe@gmail.com,Sylhet
+Parsed Data - ID: 2, First: Jane, Last: Doe, Email: jane.doe@gmail.com, City: Sylhet
+Connected to MySQL successfully
+Stored successfully - ID: 2, Name: Jane Doe, Email: jane.doe@gmail.com, City: Sylhet
+Received data: 3,Michael,Smith,michael.smith@gmail.com,Chittagong
+Parsed Data - ID: 3, First: Michael, Last: Smith, Email: michael.smith@gmail.com, City: Chittagong
+Connected to MySQL successfully
+Stored successfully - ID: 3, Name: Michael Smith, Email: michael.smith@gmail.com, City: Chittagong
+Received data: 4,Sarah,Johnson,sarah.johnson@gmail.com,Khulna
+Parsed Data - ID: 4, First: Sarah, Last: Johnson, Email: sarah.johnson@gmail.com, City: Khulna
+Connected to MySQL successfully
+Stored successfully - ID: 4, Name: Sarah Johnson, Email: sarah.johnson@gmail.com, City: Khulna
+Received data: 5,David,Williams,david.williams@gmail.com,Barisal
+Parsed Data - ID: 5, First: David, Last: Williams, Email: david.williams@gmail.com, City: Barisal
+Connected to MySQL successfully
+Stored successfully - ID: 5, Name: David Williams, Email: david.williams@gmail.com, City: Barisal
+Received data: 6,Imran,Nazir,emon.genius@gmail.com,Sirajganj
+Parsed Data - ID: 6, First: Imran, Last: Nazir, Email: emon.genius@gmail.com, City: Sirajganj
+Connected to MySQL successfully
+Stored successfully - ID: 6, Name: Imran Nazir, Email: emon.genius@gmail.com, City: Sirajganj
+Received data: 7,Ruhul,Sujon,sujon@gmail.com,Sirajganj
+Parsed Data - ID: 7, First: Ruhul, Last: Sujon, Email: sujon@gmail.com, City: Sirajganj
+Connected to MySQL successfully
+Stored successfully - ID: 7, Name: Ruhul Sujon, Email: sujon@gmail.com, City: Sirajganj
+Received data: 8,Emu,Mon,emon@gmail.com,Dhaka
+Parsed Data - ID: 8, First: Emu, Last: Mon, Email: emon@gmail.com, City: Dhaka
+Connected to MySQL successfully
+Stored successfully - ID: 8, Name: Emu Mon, Email: emon@gmail.com, City: Dhaka
+Client disconnected
+Client disconnected
+Server listening on port 8080...
+New client connected
+Received data: 1,John,Doe,john.doe@gmail.com,Dhaka
+Parsed Data - ID: 1, First: John, Last: Doe, Email: john.doe@gmail.com, City: Dhaka
+Connected to MySQL successfully
+Stored successfully - ID: 1, Name: John Doe, Email: john.doe@gmail.com, City: Dhaka
+Received data: 2,Jane,Doe,jane.doe@gmail.com,Sylhet
+Parsed Data - ID: 2, First: Jane, Last: Doe, Email: jane.doe@gmail.com, City: Sylhet
+Connected to MySQL successfully
+Stored successfully - ID: 2, Name: Jane Doe, Email: jane.doe@gmail.com, City: Sylhet
+Received data: 3,Michael,Smith,michael.smith@gmail.com,Chittagong
+Parsed Data - ID: 3, First: Michael, Last: Smith, Email: michael.smith@gmail.com, City: Chittagong
+Connected to MySQL successfully
+Stored successfully - ID: 3, Name: Michael Smith, Email: michael.smith@gmail.com, City: Chittagong
+Received data: 4,Sarah,Johnson,sarah.johnson@gmail.com,Khulna
+Parsed Data - ID: 4, First: Sarah, Last: Johnson, Email: sarah.johnson@gmail.com, City: Khulna
+Connected to MySQL successfully
+Stored successfully - ID: 4, Name: Sarah Johnson, Email: sarah.johnson@gmail.com, City: Khulna
+Received data: 5,David,Williams,david.williams@gmail.com,Barisal
+Parsed Data - ID: 5, First: David, Last: Williams, Email: david.williams@gmail.com, City: Barisal
+Connected to MySQL successfully
+Stored successfully - ID: 5, Name: David Williams, Email: david.williams@gmail.com, City: Barisal
+Received data: 6,Imran,Nazir,emon.genius@gmail.com,Sirajganj
+Parsed Data - ID: 6, First: Imran, Last: Nazir, Email: emon.genius@gmail.com, City: Sirajganj
+Connected to MySQL successfully
+Stored successfully - ID: 6, Name: Imran Nazir, Email: emon.genius@gmail.com, City: Sirajganj
+Received data: 7,Ruhul,Sujon,sujon@gmail.com,Sirajganj
+Parsed Data - ID: 7, First: Ruhul, Last: Sujon, Email: sujon@gmail.com, City: Sirajganj
+Connected to MySQL successfully
+Stored successfully - ID: 7, Name: Ruhul Sujon, Email: sujon@gmail.com, City: Sirajganj
+Received data: 8,Emu,Mon,emon@gmail.com,Dhaka
+Parsed Data - ID: 8, First: Emu, Last: Mon, Email: emon@gmail.com, City: Dhaka
+Connected to MySQL successfully
+Stored successfully - ID: 8, Name: Emu Mon, Email: emon@gmail.com, City: Dhaka
+Client disconnected
+Client disconnected
+Server listening on port 8080...
+New client connected
+Received data: 1,John,Doe,john.doe@gmail.com,Dhaka
+Parsed Data - ID: 1, First: John, Last: Doe, Email: john.doe@gmail.com, City: Dhaka
+Connected to MySQL successfully
+Already in DB - ID: 1, Name: John Doe, Email: john.doe@gmail.com, City: Dhaka
+Received data: 2,Jane,Doe,jane.doe@gmail.com,Sylhet
+Parsed Data - ID: 2, First: Jane, Last: Doe, Email: jane.doe@gmail.com, City: Sylhet
+Connected to MySQL successfully
+Already in DB - ID: 2, Name: Jane Doe, Email: jane.doe@gmail.com, City: Sylhet
+Received data: 3,Michael,Smith,michael.smith@gmail.com,Chittagong
+Parsed Data - ID: 3, First: Michael, Last: Smith, Email: michael.smith@gmail.com, City: Chittagong
+Connected to MySQL successfully
+Already in DB - ID: 3, Name: Michael Smith, Email: michael.smith@gmail.com, City: Chittagong
+Received data: 4,Sarah,Johnson,sarah.johnson@gmail.com,Khulna
+Parsed Data - ID: 4, First: Sarah, Last: Johnson, Email: sarah.johnson@gmail.com, City: Khulna
+Connected to MySQL successfully
+Already in DB - ID: 4, Name: Sarah Johnson, Email: sarah.johnson@gmail.com, City: Khulna
+Received data: 5,David,Williams,david.williams@gmail.com,Barisal
+Parsed Data - ID: 5, First: David, Last: Williams, Email: david.williams@gmail.com, City: Barisal
+Connected to MySQL successfully
+Already in DB - ID: 5, Name: David Williams, Email: david.williams@gmail.com, City: Barisal
+Received data: 6,Imran,Nazir,emon.genius@gmail.com,Sirajganj
+Parsed Data - ID: 6, First: Imran, Last: Nazir, Email: emon.genius@gmail.com, City: Sirajganj
+Connected to MySQL successfully
+Already in DB - ID: 6, Name: Imran Nazir, Email: emon.genius@gmail.com, City: Sirajganj
+Received data: 7,Ruhul,Sujon,sujon@gmail.com,Sirajganj
+Parsed Data - ID: 7, First: Ruhul, Last: Sujon, Email: sujon@gmail.com, City: Sirajganj
+Connected to MySQL successfully
+Already in DB - ID: 7, Name: Ruhul Sujon, Email: sujon@gmail.com, City: Sirajganj
+Received data: 8,Emu,Mon,emon@gmail.com,Dhaka
+Parsed Data - ID: 8, First: Emu, Last: Mon, Email: emon@gmail.com, City: Dhaka
+Connected to MySQL successfully
+Already in DB - ID: 8, Name: Emu Mon, Email: emon@gmail.com, City: Dhaka
+Client disconnected
+Client disconnected
+Server listening on port 8080...
+New client connected
+Received data: 1,John,Doe,john.doe@gmail.com,Dhaka
+Parsed Data - ID: 1, First: John, Last: Doe, Email: john.doe@gmail.com, City: Dhaka
+Connected to MySQL successfully
+Already in DB - ID: 1, Name: John Doe, Email: john.doe@gmail.com, City: Dhaka
+Received data: 2,Jane,Doe,jane.doe@gmail.com,Sylhet
+Parsed Data - ID: 2, First: Jane, Last: Doe, Email: jane.doe@gmail.com, City: Sylhet
+Connected to MySQL successfully
+Already in DB - ID: 2, Name: Jane Doe, Email: jane.doe@gmail.com, City: Sylhet
+Received data: 3,Michael,Smith,michael.smith@gmail.com,Chittagong
+Parsed Data - ID: 3, First: Michael, Last: Smith, Email: michael.smith@gmail.com, City: Chittagong
+Connected to MySQL successfully
+Already in DB - ID: 3, Name: Michael Smith, Email: michael.smith@gmail.com, City: Chittagong
+Received data: 4,Sarah,Johnson,sarah.johnson@gmail.com,Khulna
+Parsed Data - ID: 4, First: Sarah, Last: Johnson, Email: sarah.johnson@gmail.com, City: Khulna
+Connected to MySQL successfully
+Already in DB - ID: 4, Name: Sarah Johnson, Email: sarah.johnson@gmail.com, City: Khulna
+Received data: 5,David,Williams,david.williams@gmail.com,Barisal
+Parsed Data - ID: 5, First: David, Last: Williams, Email: david.williams@gmail.com, City: Barisal
+Connected to MySQL successfully
+Already in DB - ID: 5, Name: David Williams, Email: david.williams@gmail.com, City: Barisal
+Received data: 6,Imran,Nazir,emon.genius@gmail.com,Sirajganj
+Parsed Data - ID: 6, First: Imran, Last: Nazir, Email: emon.genius@gmail.com, City: Sirajganj
+Connected to MySQL successfully
+Already in DB - ID: 6, Name: Imran Nazir, Email: emon.genius@gmail.com, City: Sirajganj
+Received data: 7,Ruhul,Sujon,sujon@gmail.com,Sirajganj
+Parsed Data - ID: 7, First: Ruhul, Last: Sujon, Email: sujon@gmail.com, City: Sirajganj
+Connected to MySQL successfully
+Already in DB - ID: 7, Name: Ruhul Sujon, Email: sujon@gmail.com, City: Sirajganj
+Received data: 8,Emu,Mon,emon@gmail.com,Dhaka
+Parsed Data - ID: 8, First: Emu, Last: Mon, Email: emon@gmail.com, City: Dhaka
+Connected to MySQL successfully
+Already in DB - ID: 8, Name: Emu Mon, Email: emon@gmail.com, City: Dhaka
+Client disconnected
+Client disconnected
+Server listening on port 8080...
+New client connected
+Received data: 1,John,Doe,john.doe@gmail.com,Dhaka
+Parsed Data - ID: 1, First: John, Last: Doe, Email: john.doe@gmail.com, City: Dhaka
+Connected to MySQL successfully
+Already in DB - ID: 1, Name: John Doe, Email: john.doe@gmail.com, City: Dhaka
+Received data: 2,Jane,Doe,jane.doe@gmail.com,Sylhet
+Parsed Data - ID: 2, First: Jane, Last: Doe, Email: jane.doe@gmail.com, City: Sylhet
+Connected to MySQL successfully
+Already in DB - ID: 2, Name: Jane Doe, Email: jane.doe@gmail.com, City: Sylhet
+Received data: 3,Michael,Smith,michael.smith@gmail.com,Chittagong
+Parsed Data - ID: 3, First: Michael, Last: Smith, Email: michael.smith@gmail.com, City: Chittagong
+Connected to MySQL successfully
+Already in DB - ID: 3, Name: Michael Smith, Email: michael.smith@gmail.com, City: Chittagong
+Received data: 4,Sarah,Johnson,sarah.johnson@gmail.com,Khulna
+Parsed Data - ID: 4, First: Sarah, Last: Johnson, Email: sarah.johnson@gmail.com, City: Khulna
+Connected to MySQL successfully
+Already in DB - ID: 4, Name: Sarah Johnson, Email: sarah.johnson@gmail.com, City: Khulna
+Received data: 5,David,Williams,david.williams@gmail.com,Barisal
+Parsed Data - ID: 5, First: David, Last: Williams, Email: david.williams@gmail.com, City: Barisal
+Connected to MySQL successfully
+Already in DB - ID: 5, Name: David Williams, Email: david.williams@gmail.com, City: Barisal
+Received data: 6,Imran,Nazir,emon.genius@gmail.com,Sirajganj
+Parsed Data - ID: 6, First: Imran, Last: Nazir, Email: emon.genius@gmail.com, City: Sirajganj
+Connected to MySQL successfully
+Already in DB - ID: 6, Name: Imran Nazir, Email: emon.genius@gmail.com, City: Sirajganj
+Received data: 7,Ruhul,Sujon,sujon@gmail.com,Sirajganj
+Parsed Data - ID: 7, First: Ruhul, Last: Sujon, Email: sujon@gmail.com, City: Sirajganj
+Connected to MySQL successfully
+Already in DB - ID: 7, Name: Ruhul Sujon, Email: sujon@gmail.com, City: Sirajganj
+Received data: 8,Emu,Mon,emon@gmail.com,Dhaka
+Parsed Data - ID: 8, First: Emu, Last: Mon, Email: emon@gmail.com, City: Dhaka
+Connected to MySQL successfully
+Already in DB - ID: 8, Name: Emu Mon, Email: emon@gmail.com, City: Dhaka
+Client disconnected
+Client disconnected
+New client connected
+Received data: 1,John,Doe,john.doe@gmail.com,Dhaka
+Parsed Data - ID: 1, First: John, Last: Doe, Email: john.doe@gmail.com, City: Dhaka
+Connected to MySQL successfully
+Stored successfully - ID: 1, Name: John Doe, Email: john.doe@gmail.com, City: Dhaka
+Received data: 2,Jane,Doe,jane.doe@gmail.com,Sylhet
+Parsed Data - ID: 2, First: Jane, Last: Doe, Email: jane.doe@gmail.com, City: Sylhet
+Connected to MySQL successfully
+Stored successfully - ID: 2, Name: Jane Doe, Email: jane.doe@gmail.com, City: Sylhet
+Received data: 3,Michael,Smith,michael.smith@gmail.com,Chittagong
+Parsed Data - ID: 3, First: Michael, Last: Smith, Email: michael.smith@gmail.com, City: Chittagong
+Connected to MySQL successfully
+Stored successfully - ID: 3, Name: Michael Smith, Email: michael.smith@gmail.com, City: Chittagong
+Received data: 4,Sarah,Johnson,sarah.johnson@gmail.com,Khulna
+Parsed Data - ID: 4, First: Sarah, Last: Johnson, Email: sarah.johnson@gmail.com, City: Khulna
+Connected to MySQL successfully
+Stored successfully - ID: 4, Name: Sarah Johnson, Email: sarah.johnson@gmail.com, City: Khulna
+Received data: 5,David,Williams,david.williams@gmail.com,Barisal
+Parsed Data - ID: 5, First: David, Last: Williams, Email: david.williams@gmail.com, City: Barisal
+Connected to MySQL successfully
+Stored successfully - ID: 5, Name: David Williams, Email: david.williams@gmail.com, City: Barisal
+Received data: 6,Imran,Nazir,emon.genius@gmail.com,Sirajganj
+Parsed Data - ID: 6, First: Imran, Last: Nazir, Email: emon.genius@gmail.com, City: Sirajganj
+Connected to MySQL successfully
+Stored successfully - ID: 6, Name: Imran Nazir, Email: emon.genius@gmail.com, City: Sirajganj
+Received data: 7,Ruhul,Sujon,sujon@gmail.com,Sirajganj
+Parsed Data - ID: 7, First: Ruhul, Last: Sujon, Email: sujon@gmail.com, City: Sirajganj
+Connected to MySQL successfully
+Stored successfully - ID: 7, Name: Ruhul Sujon, Email: sujon@gmail.com, City: Sirajganj
+Received data: 8,Emu,Mon,emon@gmail.com,Dhaka
+Parsed Data - ID: 8, First: Emu, Last: Mon, Email: emon@gmail.com, City: Dhaka
+Connected to MySQL successfully
+Stored successfully - ID: 8, Name: Emu Mon, Email: emon@gmail.com, City: Dhaka
+Client disconnected
+Client disconnected

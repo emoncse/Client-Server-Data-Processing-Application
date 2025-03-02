@@ -20,7 +20,12 @@ void store_data_in_db(int client_socket, const char *data);
 void send_acknowledgment(int client_socket, const char *message);
 
 int main() {
-    freopen("logs/server.log", "a", stdout);
+    FILE *log_file = freopen("logs/server.log", "a", stdout);
+    if (!log_file) {
+        perror("Failed to open log file");
+        exit(EXIT_FAILURE);
+    }
+
     start_server();
     return 0;
 }
@@ -87,14 +92,20 @@ void receive_and_process_data(int client_socket) {
         buffer[bytes_received] = '\0';
         printf("Received data: %s\n", buffer);
         fflush(stdout);
-
         store_data_in_db(client_socket, buffer);
     }
+    if (bytes_received == 0) {
+        printf("Client disconnected\n");
+        fflush(stdout);
+    } else if (bytes_received < 0) {
+        printf("Receive failed.");
+    }
+
 }
 
 void store_data_in_db(int client_socket, const char *data) {
     char data_copy[BUFFER_SIZE];
-    strncpy(data_copy, data, BUFFER_SIZE);
+    strncpy(data_copy, data, BUFFER_SIZE - 1);
     data_copy[BUFFER_SIZE - 1] = '\0';
 
     char *tokens[5];
@@ -113,7 +124,14 @@ void store_data_in_db(int client_socket, const char *data) {
         return;
     }
 
-    int id = atoi(tokens[0]);
+    char *endptr;
+    int id = strtol(tokens[0], &endptr, 10);
+    if (*endptr != '\0') {
+        printf("Invalid ID format: %s\n", tokens[0]);
+        fflush(stdout);
+        send(client_socket, "Invalid ID format\n", 18, 0);
+        return;
+    }
     char *first_name = tokens[1];
     char *last_name = tokens[2];
     char *email = tokens[3];
@@ -174,11 +192,11 @@ int execute_insert_query(MYSQL *conn, int id, const char *first_name, const char
     if (mysql_affected_rows(conn) == 0) {
         printf("Already in DB - ID: %d, Name: %s %s, Email: %s, City: %s\n", id, first_name, last_name, email, city);
         fflush(stdout);
-        send(client_fd, "Server received the data & already in DB\n", 15, 0);
+        send(client_fd, "Server received and already in DB\n", 40, 0);
     } else {
         printf("Stored successfully - ID: %d, Name: %s %s, Email: %s, City: %s\n", id, first_name, last_name, email, city);
         fflush(stdout);
-        send(client_fd, "Server received the data & stored successfully\n", 25, 0);
+        send(client_fd, "Server received and stored successfully\n", 40, 0);
     }
 
     return 0;
