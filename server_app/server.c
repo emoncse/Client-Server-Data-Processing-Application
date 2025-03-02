@@ -20,7 +20,7 @@ void store_data_in_db(int client_socket, const char *data);
 void send_acknowledgment(int client_socket, const char *message);
 
 int main() {
-    freopen("logs/server.printf", "a", stdout);
+    freopen("logs/server.log", "a", stdout);
     start_server();
     return 0;
 }
@@ -55,7 +55,7 @@ void start_server() {
         exit(EXIT_FAILURE);
     }
 
-    printf("Server listening on port %d...\n", PORT);
+    printf("Server listening on port 8080...\n");
     fflush(stdout);
 
     while (1) {

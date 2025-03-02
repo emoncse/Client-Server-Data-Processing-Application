@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  server:
+    build: ./server_app
+    container_name: user_data_server
+    restart: always
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./server_app/logs:/app/logs
+

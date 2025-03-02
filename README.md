@@ -90,6 +90,41 @@ tail -f client_app/logs/client.log
 
 ---
 
+## **Run the Server with Docker**
+
+### **1️⃣ Build and Run Server Container**
+
+To build and run the server using Docker:
+
+```sh
+docker-compose up --build -d
+```
+
+To check server logs:
+
+```sh
+docker logs -f user_data_server
+```
+
+To stop and remove the server container:
+
+```sh
+docker-compose down
+```
+
+### **2️⃣ Notes on MySQL Remote Access**
+
+- The **server container does not include MySQL**, so you must ensure the database is accessible remotely.
+- Modify your MySQL configuration (`/etc/mysql/my.cnf` or `/etc/mysql/mysql.conf.d/mysqld.cnf`) to allow remote connections:
+  ```ini
+  bind-address = 0.0.0.0
+  ```
+- Grant the server access to the MySQL database
+
+---
+
+---
+
 ## **Features**
 
 - **Client reads data from CSV** and sends it to the server.
@@ -132,4 +167,3 @@ tail -f client_app/logs/client.log
 If you find a bug or want to add improvements, feel free to submit a **pull request**!
 
 🚀 **Thank you!**
-
