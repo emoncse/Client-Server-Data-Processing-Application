@@ -103,7 +103,7 @@ docker-compose up --build -d
 To check server logs:
 
 ```sh
-docker logs -f user_data_server
+docker logs -f [container id]
 ```
 
 To stop and remove the server container:
@@ -115,13 +115,7 @@ docker-compose down
 ### **2️⃣ Notes on MySQL Remote Access**
 
 - The **server container does not include MySQL**, so you must ensure the database is accessible remotely.
-- Modify your MySQL configuration (`/etc/mysql/my.cnf` or `/etc/mysql/mysql.conf.d/mysqld.cnf`) to allow remote connections:
-  ```ini
-  bind-address = 0.0.0.0
-  ```
 - Grant the server access to the MySQL database
-
----
 
 ---
 
