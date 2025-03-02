@@ -23,43 +23,6 @@ ClientApp -->|Reads from CSV| CSVFile[User CSV Data]
 
 ---
 
-## Architecture Diagram
-
-```mermaid
-graph TD;
-    Client-->Server;
-    Server-->|Parses Data| Processing;
-    Processing-->|Logs Data| Logging;
-    Processing-->|Stores Data| Database;
-    Database-->|Acknowledges| Server;
-    Server-->|Sends Response| Client;
-
-    subgraph Client
-        A[Read CSV]
-        B[Send Data to Server]
-        A-->B;
-    end
-
-    subgraph Server
-        C[Receive Data]
-        D[Parse Data]
-        E[Log Data]
-        F[Store Data in DB]
-        G[Send Acknowledgment]
-        C-->D-->E-->F-->G;
-    end
-
-    subgraph Logging
-        L[Server.log & Client.log]
-    end
-
-    subgraph Database
-        DB[(MySQL Database)]
-    end
-```
-
----
-
 ## Outline
 
 ### **1️⃣ Setup Database**
