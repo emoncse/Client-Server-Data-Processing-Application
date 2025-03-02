@@ -8,6 +8,21 @@ This project implements a **Client-Server architecture** where the **client appl
 
 ---
 
+## Full Project Flow
+
+```mermaid
+graph TD;
+ClientApp[Client Application] -->|Sends User Data| ServerApp[Server Application]
+ServerApp -->|Processes Data| Database[MySQL Database]
+Database -->|Stores Data| ServerApp
+ServerApp -->|Logs Activity| ServerLog[Server Logs]
+ClientApp -->|Logs Activity| ClientLog[Client Logs]
+ServerApp -->|Acknowledges| ClientApp
+ClientApp -->|Reads from CSV| CSVFile[User CSV Data]
+```
+
+---
+
 ## Architecture Diagram
 
 ```mermaid
