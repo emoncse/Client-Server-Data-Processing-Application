@@ -119,8 +119,7 @@ void store_data_in_db(int client_socket, const char *data) {
     char *email = tokens[3];
     char *city = tokens[4];
 
-    printf("Parsed Data - ID: %d, First: %s, Last: %s, Email: %s, City: %s\n", 
-            id, first_name, last_name, email, city);
+    printf("Parsed Data - ID: %d, First: %s, Last: %s, Email: %s, City: %s\n", id, first_name, last_name, email, city);
     fflush(stdout);
 
     MYSQL *conn = connect_to_database();
@@ -128,7 +127,6 @@ void store_data_in_db(int client_socket, const char *data) {
         send(client_socket, "Database connection failed\n", 28, 0);
         return;
     }
-
     execute_insert_query(conn, id, first_name, last_name, email, city, client_socket);
     mysql_close(conn);
 }
@@ -176,11 +174,11 @@ int execute_insert_query(MYSQL *conn, int id, const char *first_name, const char
     if (mysql_affected_rows(conn) == 0) {
         printf("Already in DB - ID: %d, Name: %s %s, Email: %s, City: %s\n", id, first_name, last_name, email, city);
         fflush(stdout);
-        send(client_fd, "Already in DB\n", 15, 0);
+        send(client_fd, "Server received the data & already in DB\n", 15, 0);
     } else {
         printf("Stored successfully - ID: %d, Name: %s %s, Email: %s, City: %s\n", id, first_name, last_name, email, city);
         fflush(stdout);
-        send(client_fd, "Stored successfully\n", 25, 0);
+        send(client_fd, "Server received the data & stored successfully\n", 25, 0);
     }
 
     return 0;
